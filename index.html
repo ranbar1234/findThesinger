@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <script data-require="angular.js@1.6.1" data-semver="1.6.1" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="MainController.js"></script>
+  </head>
+  <body ng-controller="MainController">
+    <h1 class="title">Guess the artist</h1>
+    <div class="roundNumber">Round {{currentRound}}</div>
+    <div class="albums" ng-repeat="album in albums">
+      <span class="numbering">{{$index + 1}}</span>
+      <span class="albumName">{{album}}</span>
+    </div>
+    <div class="gameDetails">
+      <div>For {{pointForQuestion}} points</div>
+      <div>Who's the artist (enter full name):</div>
+      <div>
+        <input type="text" ng-model="userAnswer">
+        <button ng-disabled="gameOver" ng-click="submitGuess()">submit</button>
+      </div>
+      <div ng-if="showHint">
+        <img class="artwork"  src={{artWork}} width="100" height="100">
+        <label class="hintLabel">Hint:</label>
+      </div>
+    </div>
+    <div class="score">Your total score is {{score}}</div>
+  </body>
+</html>
+

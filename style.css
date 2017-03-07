@@ -1,0 +1,68 @@
+.title{
+  position: relative;
+  left: calc(50% - 115px);
+  width:230px;
+}
+
+.score{
+  position: absolute;
+  left: calc(50% - 80px);  
+  bottom:50px;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.roundNumber{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  left: 40px;
+}
+
+.albumName{
+  border:solid;
+  display:inline-block;
+  width: 500px;
+  height:100px;
+  margin-bottom:20px;
+  line-height: 100px;
+  white-space:nowrap;
+  text-align: center;
+}
+
+.hintLabel{
+  position:relative;
+  left:-160px;
+  top:-50px;
+}
+
+.gameDetails{
+  right:30%;
+  top:130px;
+  position:absolute;
+}
+
+.artwork{
+  margin: 20px 0 20px 0;
+}
+
+body{
+  background: url(images/questionmarks.jpg)
+}
+
+.numbering{
+  background: #5178D0;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 15px;
+  text-align: center;
+  width: 1.6em; 
+  position: relative;
+  top:40%;
+}
